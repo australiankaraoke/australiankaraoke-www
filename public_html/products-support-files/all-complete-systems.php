@@ -1,0 +1,278 @@
+<?php require_once('../../Connections/karaoke_db.php'); ?>
+<?php
+// Load the common classes
+require_once('../../includes/common/KT_common.php');
+
+// Load the tNG classes
+require_once('../../includes/tng/tNG.inc.php');
+
+// Make a transaction dispatcher instance
+$tNGs = new tNG_dispatcher("../../");
+
+if (!function_exists("GetSQLValueString")) {
+function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
+{
+  if (PHP_VERSION < 6) {
+    $theValue = get_magic_quotes_gpc() ? stripslashes($theValue) : $theValue;
+  }
+
+  $theValue = function_exists("mysql_real_escape_string") ? mysql_real_escape_string($theValue) : mysql_escape_string($theValue);
+
+  switch ($theType) {
+    case "text":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;    
+    case "long":
+    case "int":
+      $theValue = ($theValue != "") ? intval($theValue) : "NULL";
+      break;
+    case "double":
+      $theValue = ($theValue != "") ? doubleval($theValue) : "NULL";
+      break;
+    case "date":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;
+    case "defined":
+      $theValue = ($theValue != "") ? $theDefinedValue : $theNotDefinedValue;
+      break;
+  }
+  return $theValue;
+}
+}
+
+session_start();
+$PHPSESSID = session_id();
+
+mysql_select_db($database_karaoke_db, $karaoke_db);
+$query_rs_systems = "SELECT * FROM v_systems_complete GROUP BY systems_id ORDER BY systems_cardinality ASC";
+$rs_systems = mysql_query($query_rs_systems, $karaoke_db) or die(mysql_error());
+$row_rs_systems = mysql_fetch_assoc($rs_systems);
+$totalRows_rs_systems = mysql_num_rows($rs_systems);
+
+// Show Dynamic Thumbnail
+$objDynamicThumb1 = new tNG_DynamicThumbnail("../../", "KT_thumbnail1");
+$objDynamicThumb1->setFolder("../uploads-admin/");
+$objDynamicThumb1->setRenameRule("{rs_systems.systems_filename}");
+$objDynamicThumb1->setResize(500, 350, true);
+$objDynamicThumb1->setWatermark(false);
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<link href="/frameworks/shadowbox-3-2.0.3/shadowbox.css" rel="stylesheet" type="text/css" />
+</head>
+<style>
+
+#tabs p {
+	margin-bottom: 9px;
+	line-height: 21px;
+}
+#tabs-2 ul li {
+	font-size: 14px;
+}
+#features ul li {
+	font-size: 12px;
+	margin-left: 25px;
+	line-height: 21px;
+}
+</style>
+<style type="text/css">
+.buy_now_button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #f29c93;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #f29c93;
+	box-shadow:inset 0px 1px 0px 0px #f29c93;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fe1a00), color-stop(1, #ce0100) );
+	background:-moz-linear-gradient( center top, #fe1a00 5%, #ce0100 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe1a00', endColorstr='#ce0100');
+	background-color:#fe1a00;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #d83526;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	font-size:14px;
+	font-weight:bold;
+	padding:4px 14px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #b23e35;
+}.buy_now_button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ce0100), color-stop(1, #fe1a00) );
+	background:-moz-linear-gradient( center top, #ce0100 5%, #fe1a00 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ce0100', endColorstr='#fe1a00');
+	background-color:#ce0100;
+}.buy_now_button:active {
+	position:relative;
+	top:1px;
+}
+</style>
+<style type="text/css">
+.details_button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #caefab;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #caefab;
+	box-shadow:inset 0px 1px 0px 0px #caefab;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #77d42a), color-stop(1, #5cb811) );
+	background:-moz-linear-gradient( center top, #77d42a 5%, #5cb811 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#77d42a', endColorstr='#5cb811');
+	background-color:#77d42a;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #268a16;
+	display:inline-block;
+	color:#306108;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:4px 12px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #aade7c;
+}.details_button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #5cb811), color-stop(1, #77d42a) );
+	background:-moz-linear-gradient( center top, #5cb811 5%, #77d42a 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cb811', endColorstr='#77d42a');
+	background-color:#5cb811;
+}.details_button:active {
+	position:relative;
+	top:1px;
+}
+/* This imageless css button was generated by CSSButtonGenerator.com */
+</style>
+
+<script type="text/javascript" src="/frameworks/shadowbox-3-2.0.3/shadowbox.js"></script>
+<script type="text/javascript" src="/frameworks/jquery.nicescroll.350beta5/jquery.nicescroll.js"></script>
+<body>
+<?php $counter=1; ?>
+<?php do { ?>
+<div id="systems_id_<?php echo $row_rs_systems['systems_id']; ?>" itemscope itemtype="http://schema.org/Product"></div>
+  <div style="position: relative; width: 100%;">
+    <div style="position: relative; height: 50px; width: 944px; margin-left: 25px; margin-top: 15px;
+		-moz-border-radius: 7px; /* from vector shape */
+-webkit-border-radius: 7px; /* from vector shape */
+border-radius: 7px; /* from vector shape */
+-moz-background-clip: padding;
+-webkit-background-clip: padding-box;
+background-clip: padding-box; /* prevents bg color from leaking outside the border */
+background-color: #fff; /* layer fill content */
+-moz-box-shadow: 0 0 9px rgba(0,0,0,.61); /* drop shadow */
+-webkit-box-shadow: 0 0 9px rgba(0,0,0,.61); /* drop shadow */
+box-shadow: 0 0 9px rgba(0,0,0,.61); /* drop shadow */
+background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGxpbmVhckdyYWRpZW50IGlkPSJoYXQwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjEwMCUiIHgyPSI1MCUiIHkyPSIwJSI+CjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgo8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNiZGU1ZjkiIHN0b3Atb3BhY2l0eT0iMSIvPgogICA8L2xpbmVhckdyYWRpZW50PgoKPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNoYXQwKSIgLz4KPC9zdmc+); /* gradient fill */
+background-image: -moz-linear-gradient(90deg, #fff 0%, #bde5f9 100%); /* gradient fill */
+background-image: -o-linear-gradient(90deg, #fff 0%, #bde5f9 100%); /* gradient fill */
+background-image: -webkit-linear-gradient(90deg, #fff 0%, #bde5f9 100%); /* gradient fill */
+background-image: linear-gradient(90deg, #fff 0%, #bde5f9 100%); /* gradient fill */
+
+		">
+      <div style="float: left; margin-left: 15px; margin-top: 8px;">
+        <div style="position: absolute;"><img src="/images/complete_system_number_icon.png" /></div>
+        <div style="position: absolute; color: white; font-weight: bold; font-size: 22px; margin-left: 11px; margin-top: 4px;"><?php echo $counter; ?></div>
+        </div>
+      <div style="float: left; margin-left: 50px; font-weight: bold; font-size: 22px; color: #721715; margin-top: 12px;">
+        <span itemprop="description"><?php echo $row_rs_systems['systems_title']; ?></span></div>
+        
+        
+        
+        
+            <!--<a href="#" class="buy_now_button" style="box-shadow: 0px 0px 1px 2px rgba(0,0,0,0.2); float: right; margin: 13px 13px 7px 7px;">BUY</a>-->
+            <form action="" method="post" style="float: right;margin: 14px 10px 7px 7px;">
+                        <input type="hidden" name='quantity' value="1"> 
+                        <input type="hidden" name="session_id" value="<?php echo $PHPSESSID; ?>">
+                        <input name="system_id" type="hidden" value="<?php echo $row_rs_systems['systems_id']; ?>">
+                        <input type="hidden" name="price" value="<?php echo $row_rs_systems['systems_regularPrice']; ?>">
+                        <input type="submit" value="Buy" name="KT_Insert1" class="buy_now_button" style="box-shadow: 0px 0px 1px 2px rgba(0,0,0,0.2); color: white;" />
+                        <!--<a href="#" class="buy_now_button" style="box-shadow: 0px 0px 1px 2px rgba(0,0,0,0.2); color: white;">BUY</a>	-->
+            </form>
+            
+			
+            <div style="position: relative; float: right; font-size: 21px; font-weight: bold;top: 1px; right: 5px; top: 15px;" itemprop="offer" itemscope itemtype="http://schema.org/Offer"><span itemprop="price">$<?php echo $row_rs_systems['systems_regularPrice']; ?></span></div>
+        
+        
+        <div style="clear: both;"></div>
+      </div>
+    
+    <div style="position: relative; margin-top: 15px; width: 944px; margin-left: 25px;">
+      <div style="position: relative; width: 500px; height: 250px; background-color: rgba(0,0,0,0.1); float: left;">
+      <!--<a rel="shadowbox[Mixed];width=980;height=480" href="/products-support-files/complete-systems-shadowbox.php?system_id=<?php echo $row_rs_systems['systems_id']; ?>"><img src="<?php echo $objDynamicThumb1->Execute(); ?>" border="0" /></a>-->
+      <img src="<?php echo $objDynamicThumb1->Execute(); ?>" border="0" />
+      </div>
+      <div style="position: relative; width: 410px; height: 250px; background-color: rgba(0,0,0,0.2); float: right;">
+      	<div class="tabs" style="position: relative; top: 0; width: 405px; margin-left: 0; font-size: 14px; height: 245px;">
+        	
+            
+            
+            
+            
+            
+            <ul>
+            <li><a href="#tabs-1">At A Glance</a></li>
+            <li><a href="#tabs-2">Included</a></li>
+            
+          </ul>
+          <div id="tabs-1" style="height: 170px; overflow-x: hidden; overflow-y: auto; -webkit-overflow-scrolling:touch; overflow-scrolling: touch;">
+            <div id="at_a_glance" style="font-size: 14px;height: 170px; ">
+            	<iframe src="/products-support-files/iFrame-complete-systems-at-a-glance.php?system_id=<?php echo $row_rs_systems['systems_id']; ?>" height="170" width="400" style="margin: 0 0 0 -15px; padding: 0; border: 0; background-color: white;"></iframe>
+            	
+            </div>
+          </div>
+          <div id="tabs-2" style="height: 170px; overflow-x: hidden; overflow-y: auto; -webkit-overflow-scrolling:touch; overflow-scrolling: touch;">
+            <div id="included" style="font-size: 14px;height: 170px; ">
+            	<iframe src="/products-support-files/iFrame-complete-systems-included.php?system_id=<?php echo $row_rs_systems['systems_id']; ?>" height="170" width="400" scrolling="auto" style="margin: 0 0 0 -15px; padding: 0; border: 0; background-color: white;"></iframe>
+            	
+            </div>
+          </div>
+          
+          <script>
+		  $( ".tabs" ).tabs();
+		   
+		  </script>
+        </div>
+      </div>
+      <div style="clear: both;"></div>
+      </div>
+    
+    <div id="included_components_id_<?php echo $row_rs_systems['systems_id']; ?>">
+    
+    </div>
+<script>
+		$("#included_components_id_<?php echo $row_rs_systems['systems_id']; ?>").load("/products-support-files/complate_systems_included_component.php",{"system_id":"<?php echo $row_rs_systems['systems_id']; ?>"});
+	</script>
+      
+      
+      
+      
+    <hr size="1" style="margin-top: 25px; width: 944px; margin-left: 25px; margin-bottom: 25px;">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </div>
+  <?php $counter++; ?>
+  <?php } while ($row_rs_systems = mysql_fetch_assoc($rs_systems)); ?>
+<script type="text/javascript">
+	Shadowbox.init({
+		handleOversize: "drag",
+		modal: true
+	});
+	
+</script>
+
+</body>
+</html>
+<?php
+mysql_free_result($rs_systems);
+?>

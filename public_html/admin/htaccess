@@ -1,0 +1,5 @@
+AuthName "Restricted Area" 
+AuthType Basic 
+AuthUserFile /home/codeien/public_html/admin/.htpasswd 
+AuthGroupFile /dev/null 
+require valid-user

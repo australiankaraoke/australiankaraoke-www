@@ -1,0 +1,6 @@
+@import url("main-desktop.css") only screen;
+@charset "UTF-8";
+.ui-body-c {
+  background-color: #360 !important;
+  background-image: none !important;
+}

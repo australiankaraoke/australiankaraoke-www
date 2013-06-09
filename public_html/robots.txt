@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+User-agent: *
+Disallow: /dev/
+
+User-Agent: Googlebot
+Disallow: /dev/
+
+sitemap: http://www.australiankaraoke.com.au/sitemap.xml

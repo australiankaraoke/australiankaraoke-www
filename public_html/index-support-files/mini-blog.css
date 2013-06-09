@@ -1,0 +1,24 @@
+.blogLink {
+	text-decoration: none;
+	color: #5519a8;
+}
+.blogLink a {
+	text-decoration: none;
+	color: #5519a8;
+}
+.blogLink a:link {
+	text-decoration: none;
+	color: #5519a8;
+}
+.blogLink a:visited {
+	text-decoration: none;
+	color: #5519a8;
+}
+.blogLink a:active {
+	text-decoration: underline;
+	color: #5519a8;
+}
+.blogLink a:hover {
+	text-decoration: underline;
+	color: #5519a8;
+}

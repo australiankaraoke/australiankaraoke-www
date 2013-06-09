@@ -1,0 +1,29 @@
+@import url("frameless.css") only screen;
+
+@import url("main-smartphone-landscape.css") only screen and (min-width: 321px);
+
+@import url("main-smartphone-portrait.css") only screen and (max-width: 320px);
+
+@import url("main-iphone4-portrait.css") only screen and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait), only screen and (min-device-pixel-ratio: 1.5) and (orientation: portrait);
+
+@import url("main-iphone4-landscape.css") only screen and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: landscape), only screen and (min-device-pixel-ratio: 1.5) and (orientation: landscape);
+
+@import url("main-iphone5-portrait.css") only screen and (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait);
+
+@import url("main-iphone5-landscape.css") only screen and (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape);
+
+@import url("main-ipad3-landscape.css") only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape);
+
+@import url("main-ipad3-portrait.css") only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait);
+
+@import url("main-desktop.css") only screen and (min-width: 1224px);
+@charset "UTF-8";
+.alert {
+  background: #fff6bf url(../assets/exclamation_mark.gif) center no-repeat;
+  background-position: 15px 50%;
+  text-align: left;
+  padding: 5px 20px 5px 45px;
+  border-top: 2px solid #ffd324;
+  border-bottom: 2px solid #ffd324;
+  color: #800000;
+}

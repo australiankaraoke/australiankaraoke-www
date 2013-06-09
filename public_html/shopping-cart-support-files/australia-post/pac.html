@@ -1,0 +1,256 @@
+<html>
+<head>
+	<title>PAC API JS Client</title>
+	<style>
+		.tblServiceOption{
+			display: none;
+			margin-left: 30;
+		}
+		
+		.tblServiceOptionSubOption{
+			display: none;
+			margin-left: 30;
+		}
+		
+		.subOptionExtras {
+			margin-left: 25;
+		}
+		BODY {
+			font-family: Verdana,Tahoma, Arial;
+			font-size: 12px;
+		}
+		TD {
+			font-size: 12px;
+		}
+	</style>
+	<link rel="stylesheet" href="css/jquery.ui.all.css">
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script language="javascript" type="text/javascript" src="http://code.jquery.com/ui/1.10.2/jquery-ui.min.js"></script>
+	<script language="javascript" type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.js"></script>
+	<script language="javascript" type="text/javascript" src="PacApiClient.js"></script>
+	<script>
+		function showServiceOptions(code) {
+			//hide all service options if they are displayed
+			hideServiceOptions();
+			$("#SOPTS_SELECTOR_"+code).show();
+		}
+		
+		function hideServiceOptions() {
+			$('input[name=serviceTypeCode]').each(function(){
+				var code = $(this).val();
+				$("#SOPTS_SELECTOR_"+code).hide();
+			})
+		}
+
+		function showServiceOptionSubOptions(serviceCode, optionCode) {
+			$("#SERVICE_"+serviceCode+"_SUBOPTS_SELECTOR_"+optionCode).show();
+		}
+		
+		function hideServiceOptionSubOptions(serviceCode) {
+			$('input[name=serviceOption]').each(function(){
+				var code = $(this).val();
+				$("#SERVICE_"+serviceCode+"_SUBOPTS_SELECTOR_"+code).hide();
+			})
+		}
+		
+		function showInternationalServiceOptionSubOptions(tickBox, serviceCode, optionCode) {
+			if (tickBox.checked)
+				showServiceOptionSubOptions(serviceCode, optionCode);
+			else
+				hideServiceOptionSubOptions(serviceCode);
+		}
+		
+		$(document).ready(function(){
+			new PacApiClient().init();
+		});
+	</script>
+</head>
+<body>
+	<div style="background-color: red; color:white; height: 30; font-weight: bold; font-size: 16px; padding-top: 5px;" id="pacApiTitle">Please select API type</div>
+	
+	<div id="splash">
+		Loading scripts... <br/>Please make sure Javascript is enabled in your browser.
+	</div>
+	
+	<div id="step1" style="display: none;padding-left: 150px;">
+		PAC API Type:<br>
+		<div id ="apiType">
+			<input type="radio" name="apiType" value="aus-letter"> Australian Letters<br>
+			<input type="radio" name="apiType" value="int-letter"> International Letters<br><br>
+			<input type="radio" name="apiType" value="aus-parcel"> Australian Parcels<br>
+			<input type="radio" name="apiType" value="int-parcel"> International Parcels<br>
+			<br/>
+		</div>
+		
+		<div id="aus-letter" style="display: none;">
+			Length:<br>
+			<input id="aus-letter-length" type="text"><br>
+			Width:<br>
+			<input id="aus-letter-width" type="text"><br>
+			Thickness:<br>
+			<input id="aus-letter-thickness" type="text"><br>
+			Weight:<br>
+			<input id="aus-letter-weight" type="text"><br><br>
+		</div>
+		
+		<div id="aus-parcel" style="display: none;">
+			From postcode:<br>
+			<input id="aus-parcel-from-postcode" type="text"><br>
+			To postcode:<br>
+			<input id="aus-parcel-to-postcode" type="text"><br>
+			Length:<br>
+			<input id="aus-parcel-length" type="text"><br>
+			Width:<br>
+			<input id="aus-parcel-width" type="text"><br>
+			Height:<br>
+			<input id="aus-parcel-height" type="text"><br>
+			Weight:<br>
+			<input id="aus-parcel-weight" type="text"><br><br>
+		</div>
+		
+		<div id="int-letter" style="display: none;">
+			Country:<br>
+			<select id="int-letter-country-code"><option value="">Please Select a country</option></select><br><br>
+			Weight (leave empty for postcards):<br>
+			<input id="int-letter-weight" type="text"><br><br>
+		</div>
+		
+		<div id="int-parcel" style="display: none;">
+			Country:<br>
+			<select id="int-parcel-country-code"><option value="">Please Select a country</option></select><br><br>
+			Weight:<br>
+			<input id="int-parcel-weight" type="text"><br><br>
+		</div>
+		
+		<input id="btnStep1Next" type="button" value="Next"  style="display: none;">
+	</div>
+	
+	<div id="step2" style="display: none;">
+		<div id="service">
+			<table width="400">
+				<tr>
+					<td style="background-color: #dddddd;">					
+						<input id="SERVICE_${serviceCode}" type="radio" value="${serviceCode}" name="serviceTypeCode"
+						       onClick="{{if options.length}}showServiceOptions('${serviceCode}'){{else}}hideServiceOptions(){{/if}}">
+						<label for="SERVICE_${serviceCode}">${serviceName}</label>
+						
+						{{if options.length }}
+						<table id="SOPTS_SELECTOR_${serviceCode}" class="tblServiceOption">
+							<tr>
+								<td>
+						{{/if}}
+						
+							{{each options}}
+								{{if serviceType=="domestic"}}
+								<input id="SERVICE_${serviceCode}_SERVICE_OPTION_${$value.optionCode}" type="radio" value="${$value.optionCode}" name="serviceOption" 
+									   onClick="{{if subOptions.length}}showServiceOptionSubOptions('${serviceCode}', '${$value.optionCode}'){{else}}hideServiceOptionSubOptions('${serviceCode}'){{/if}}">
+									<label for="SERVICE_${serviceCode}_SERVICE_OPTION_${$value.optionCode}">${$value.optionName}</label><br>
+								{{else}}
+								<input id="SERVICE_${serviceCode}_SERVICE_OPTION_${$value.optionCode}" type="checkbox" value="${$value.optionCode}" name="serviceOption"
+										onClick="{{if subOptions.length}}showInternationalServiceOptionSubOptions(this, '${serviceCode}', '${$value.optionCode}'){{/if}}">
+									<label for="SERVICE_${serviceCode}_SERVICE_OPTION_${$value.optionCode}">${$value.optionName}</label><br>
+									{{if optionCode=="INTL_SERVICE_OPTION_EXTRA_COVER"}}
+										<div class="subOptionExtras">
+											$ <input id="SERVICE_${serviceCode}_SERVICE_OPTION_${$value.optionCode}_EXTRA_COVER_VALUE" 
+													type="text" size="5"> up to $${max_extra_cover}
+										</div>
+									{{/if}}
+								{{/if}}
+								{{if subOptions.length }}
+								<table id="SERVICE_${serviceCode}_SUBOPTS_SELECTOR_${$value.optionCode}" class="tblServiceOptionSubOption">
+									<tr>
+										<td>
+								{{/if}}
+
+								{{each subOptions}}
+										<input id="SERVICE_${serviceCode}_SERVICE_OPTION_${optionCode}_SUBOPTION_${$value.code}" type="checkbox" value="${$value.code}" 
+										       name="serviceOptionSubOptions">
+										<label for="SERVICE_${serviceCode}_SERVICE_OPTION_${optionCode}_SUBOPTION_${$value.code}">${$value.name}</label><br>
+									{{if code=="AUS_SERVICE_OPTION_EXTRA_COVER"}}
+										<div class="subOptionExtras">
+											$ <input id="SERVICE_${serviceCode}_SERVICE_OPTION_${optionCode}_SUBOPTION_${$value.code}_EXTRA_COVER_VALUE" 
+													type="text" size="5"> up to $${max_extra_cover}
+										</div>
+									{{/if}}
+								{{/each}}
+								
+								{{if subOptions.length}}
+										</td>
+									</tr>
+								</table>
+								{{/if}}
+								
+							{{/each}}
+						
+						{{if options.length}}
+								</td>
+							</tr>
+						</table>
+						{{/if}}
+					</td>
+				</tr>
+			</table>
+		</div>
+		<input id="btnStep2Prev" type="button" value="Previous">
+		<input id="btnStep2Next" type="button" value="Next" style="margin-left: 25px;">
+	</div>
+	
+	<div id="step3" style="display: none;">
+		<div id="calculate">
+			<table width="400">
+				<tr>
+					<td>
+						<b>${serviceName}</b><br>
+						<i>${deliveryTime}</i>
+					</td>
+				</tr>
+			</table>
+			<table width="400">
+				<tr>
+					<td width="300" style="background-color: #dddddd;">
+						<b>SERVICE</b>
+					</td>
+					<td width="100" style="background-color: #dddddd;" align="right">
+						<b>PRICE</b>
+					</td>
+				</tr>
+			</table>
+		
+			{{each costs}}
+			<table width="400">
+				<tr>
+					<td width="300" style="background-color: #eeeeee;">
+						${$value.item}
+					</td>
+					<td width="100" style="background-color: #eeeeee;" align="right">
+						$${$value.cost}
+					</td>
+				</tr>
+			</table>
+			{{/each}}
+			
+			<table width="400">
+				<tr>
+					<td width="300" style="background-color: #dddddd;">
+						<b>Total Charge</b>
+					</td>
+					<td width="100" style="background-color: #dddddd;" align="right">
+						<b>$${totalCost}</b>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<input id="btnStep3Prev" type="button" value="Previous">
+	</div>
+	
+	<div id="debug" style="display: none; position:absolute; top:48; left:450; width: 600px; background-color: #dddd99; overflow: auto;">
+		<b>DEBUG WINDOW</b><br><br>
+		
+		<b>API Call</b>
+		<div id="apiUrl" style="font-family: Courier New; font-size:12px;"></div>
+		
+		<b>XML Result</b>
+		<pre id="xmlResult"></pre>
+	</div>
+</body>
+</html>

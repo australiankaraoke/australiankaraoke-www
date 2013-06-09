@@ -1,0 +1,952 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/</loc>
+		<changefreq>hourly</changefreq>
+		<priority>1.0</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/products/complete-systems.php</loc>
+		<changefreq>daily</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/products/</loc>
+		<changefreq>daily</changefreq>
+		<priority>0.8</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/products/bargains-special-used.php</loc>
+		<changefreq>daily</changefreq>
+		<priority>0.8</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/tracks/</loc>
+		<changefreq>weekly</changefreq>
+		<priority>0.8</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/studio/</loc>
+		<changefreq>daily</changefreq>
+		<priority>0.6</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/contact/</loc>
+		<changefreq>daily</changefreq>
+		<priority>0.6</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/category/1/Karaoke Players/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/category/2/Mixers/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/category/3/Stands/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/category/4/PA Packages/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/category/5/Microphones/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/category/6/Speakers/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/category/7/Power Amplifiers/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/category/8/Headphones/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/category/9/iPhone And iPad Audio Hardware/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/category/10/Karaoke Computer And Software Packs/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/category/11/Accessories/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/category/12/Audio Recorders/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/category/13/Signal Processors/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/8/11/27/36/Reference/Headphones/Samson-RH600/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/5/6/15/39/Wired/Microphones/Samson-R11/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/7/0/0/60/0/Power-Amplifiers/Phonic-MAX860/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/7/0/0/61/0/Power-Amplifiers/Phonic-Max1500/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/7/0/0/62/0/Power-Amplifiers/Phonic-Max2500/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/5/6/15/107/Wired/Microphones/Samson-C03/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/5/6/15/108/Wired/Microphones/Samson-Q7/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/8/11/27/116/Reference/Headphones/Samson-RH300/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/8/11/27/117/Reference/Headphones/Samson-RH100/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/8/11/26/118/Personal/Headphones/Samson-PH60/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/8/11/27/119/Reference/Headphones/Samson-CH700/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/8/11/27/120/Reference/Headphones/Samson-CH70/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/5/6/15/124/Wired/Microphones/Samson-C02/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/4/0/0/145/0/PA-Packages/Phonic-RoadGear160Plus/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/4/0/0/146/0/PA-Packages/Phonic-RoadGear260Plus/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/13/0/0/162/0/Signal-Processors/Samson-S-CURVE215/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/13/0/0/163/0/Signal-Processors/Samson-S-CURVE131/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/13/0/0/164/0/Signal-Processors/Samson-S-Curve231/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/13/0/0/166/0/Signal-Processors/Samson-SCOMPlus/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/13/0/0/167/0/Signal-Processors/Samson-S-Gate4/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/13/0/0/168/0/Signal-Processors/Samson-S3WAY/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/3/3/6/180/LCD---TV/Stands/UXL-TVS-601/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/2/2/4/199/Passive/Mixers/VocoPro-DA-1000PRO/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/5/6/16/204/Wireless/Microphones/Samson-AIRLINE77H/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/5/6/16/205/Wireless/Microphones/Samson-CONCERT77/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/5/6/15/210/Wired/Microphones/Samson-C15CL/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/5/6/15/220/Wired/Microphones/Samson-CL8/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/5/6/15/221/Wired/Microphones/Samson-CL7/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/5/7/18/249/Condenser/Microphones/Samson-C03U/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/5/7/17/251/Dynamic/Microphones/Samson-Q1U/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/6/9/22/262/Portable---Venue/Speakers/Samson-DB-1800A/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/5/6/15/264/Wired/Microphones/Bardl-BSF-22/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/5/6/15/265/Wired/Microphones/Bardl-BK8S/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/10/0/0/279/0/Karaoke-Computer-And-Software-Packs/Australian-Karaoke-CKS2/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/10/0/0/280/0/Karaoke-Computer-And-Software-Packs/Australian-Karaoke-CKS0/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/10/0/0/282/0/Karaoke-Computer-And-Software-Packs/Australian-Karaoke-CKS3/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/6/9/23/283/Studio/Speakers/Samson-ResolvA5/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/6/9/23/284/Studio/Speakers/Samson-ResolvA6/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/6/9/23/285/Studio/Speakers/Samson-ResolvA8/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/11/0/0/292/0/Accessories/Samson-RB2030/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/9/0/0/293/0/iPhone-And-iPad-Audio-Hardware/Belkin-TuneSTUDIO/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/6/9/22/294/Portable---Venue/Speakers/HK-Audio-SH1/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/5/6/15/297/Wired/Microphones/Superlux-PROH7E/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/5/6/15/298/Wired/Microphones/Superlux-PROH7F/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/5/6/15/299/Wired/Microphones/Superlux-PRO248/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/5/7/17/300/Dynamic/Microphones/Superlux-PRO258/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/5/6/15/301/Wired/Microphones/Shure-SM58/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/5/6/15/302/Wired/Microphones/Shure-SM57/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/3/3/7/349/LCD---Mic-Combo/Stands/Australian-Karaoke-LCDSTAND/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/2/2/4/354/Passive/Mixers/Numark-C3FX/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/11/13/39/355/Converters/Accessories/UXL-USB160/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/4/0/0/358/0/PA-Packages/Peak-PPS40D/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/2/2/30/359/Passive-And-USB/Mixers/Alesis-MultiMix8/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/4/0/0/361/0/PA-Packages/Samson-XP308i/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/2/2/30/363/Passive-And-USB/Mixers/Alesis-Multimix4/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/4/0/0/368/0/PA-Packages/Samson-XP510i/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/2/2/3/370/Powered/Mixers/Phonic-KA720/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/2/2/4/377/Passive/Mixers/VocoPro-DA-X10PRO/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/5/6/15/379/Wired/Microphones/Shure-PG58/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/6/9/22/384/Portable---Venue/Speakers/dB-Technologies-OPERA610D/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/5/6/15/385/Wired/Microphones/Samson-CL5/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/5/6/16/387/Wireless/Microphones/Samson-CR277/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/1/1/1/391/Domestic/Karaoke-Players/RSQ-STARSINGER-700/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/5/6/15/392/Wired/Microphones/Samson-Q7VP/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/3/3/5/393/Microphone/Stands/Hercules-Stands-MS601B/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/3/3/5/394/Microphone/Stands/Hercules-Stands-MS755B/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/3/3/5/395/Microphone/Stands/Hercules-Stands-MS651B/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/3/5/13/396/Boom/Stands/Superlux-MS108E/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/5/6/16/398/Wireless/Microphones/Samson-Airline/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/5/6/15/400/Wired/Microphones/Samson-Q1B/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/5/6/16/405/Wireless/Microphones/dB-Technologies-IEM600B/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/6/9/21/407/Ultra-Portable/Speakers/Samson-Auro-D412/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/6/8/20/408/Passive/Speakers/Samson-Auro-D12/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/3/3/8/409/Multi-Purpose/Stands/The-Crane-Stand-CV2-PSTD/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/11/13/38/410/Bags/Accessories/UDG-U9010/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/11/13/38/411/Bags/Accessories/UDG-U9960/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/11/13/38/412/Bags/Accessories/UDG-U8200BL/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/11/13/38/413/Bags/Accessories/UDG-U9870/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/11/13/38/414/Bags/Accessories/UDG-U8010/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/9/0/0/420/0/iPhone-And-iPad-Audio-Hardware/Tascam-iM2/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/9/0/0/421/0/iPhone-And-iPad-Audio-Hardware/Tascam-iA2/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/12/0/0/423/0/Audio-Recorders/Tascam-DR-05/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/9/0/0/425/0/iPhone-And-iPad-Audio-Hardware/Samson-StudioDock-4i/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/4/0/0/426/0/PA-Packages/Samson-XP150/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/12/0/0/427/0/Audio-Recorders/BMB-DA-X1/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/12/0/0/433/0/Audio-Recorders/Tascam-SS-R200/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/12/0/0/434/0/Audio-Recorders/VocoPro-SDR-3000/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/2/2/4/435/Passive/Mixers/VocoPro-DA-2200PRO/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/5/6/15/436/Wired/Microphones/Samson-Q8/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/3/3/8/437/Multi-Purpose/Stands/The-Crane-Stand-CV1-STL/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/5/6/16/438/Wireless/Microphones/dB-Technologies-PU860/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/11/0/0/441/0/Accessories/Phonic-DB3/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/6/9/22/443/Portable---Venue/Speakers/AISC-AISC-12/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/6/9/22/444/Portable---Venue/Speakers/Phonic-Inception-12A/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/6/9/22/445/Portable---Venue/Speakers/Phonic-iSK12/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/6/9/21/449/Ultra-Portable/Speakers/Samson-Auro-D208/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/4/0/0/450/0/PA-Packages/HK-Audio-LUCAS-Nano-300/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/5/6/15/451/Wired/Microphones/Beyerdynamic-TG-V35DS/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/11/13/37/452/Leads/Accessories/DCM-Premium-IPC-201PN-20FT/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/11/13/37/453/Leads/Accessories/DCM-Premium-MP-270-30FT/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/11/13/37/454/Leads/Accessories/DCM-Premium-MP-270-20FT/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/11/13/37/455/Leads/Accessories/DCM-Premium-IB-201BNG-20FT/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/9/0/0/457/0/iPhone-And-iPad-Audio-Hardware/Alesis-IO-MIX/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/9/0/0/458/0/iPhone-And-iPad-Audio-Hardware/Tascam-IXJ2/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/9/0/0/459/0/iPhone-And-iPad-Audio-Hardware/Tascam-IM2x/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/1/1/1/461/Domestic/Karaoke-Players/Sound-Choice-PCK-4000/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/1/1/1/462/Domestic/Karaoke-Players/RSQ-NEO-22/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/1/1/1/463/Domestic/Karaoke-Players/RSQ-P-300/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/1/1/2/464/Professional/Karaoke-Players/RSQ-Neo-K2/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/2/2/4/467/Passive/Mixers/Mackie-802-VLZ3/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/2/2/4/468/Passive/Mixers/Mackie-402-VLZ3/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/2/2/30/469/Passive-And-USB/Mixers/Mackie-ProFX8/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/2/2/30/470/Passive-And-USB/Mixers/Phonic-AM442DUSB/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/2/2/4/471/Passive/Mixers/Wharfedale-WDR1604FX/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/4/0/0/472/0/PA-Packages/Mackie-SRM150/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/2/2/3/473/Powered/Mixers/Phonic-PowerPod-410/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/5/6/15/477/Wired/Microphones/Superlux-D107B/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/5/6/16/478/Wireless/Microphones/Samson-AirLine-Synth/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/6/8/19/479/Powered/Speakers/Mackie-DLM12/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/6/8/19/480/Powered/Speakers/Mackie-DLM12S/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/6/9/22/481/Portable---Venue/Speakers/Mackie-HD1801/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/6/9/22/482/Portable---Venue/Speakers/Mackie-HD1501/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/6/9/22/483/Portable---Venue/Speakers/Mackie-HD1531/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/6/9/22/484/Portable---Venue/Speakers/Mackie-HD1521/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/6/9/22/485/Portable---Venue/Speakers/Mackie-HD1221/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/6/9/21/486/Ultra-Portable/Speakers/Mackie-DLM8/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/6/9/22/487/Portable---Venue/Speakers/Mackie-SRM450V2/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/6/9/21/488/Ultra-Portable/Speakers/Mackie-TH-15A/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/6/9/21/489/Ultra-Portable/Speakers/Mackie-TH-12A/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/6/9/21/490/Ultra-Portable/Speakers/Samson-Auro-D210A/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/6/9/22/491/Portable---Venue/Speakers/Samson-Auro-D415/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/9/0/0/492/0/iPhone-And-iPad-Audio-Hardware/Mackie-DL1608/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/9/0/0/493/0/iPhone-And-iPad-Audio-Hardware/Hercules-Stands-HA300/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/6/9/22/494/Portable---Venue/Speakers/Mackie-HDA/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/2/2/4/495/Passive/Mixers/Samson-MDR6/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/3/3/9/496/Speaker/Stands/Hercules-Stands-SS200BB/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/10/0/0/497/0/Karaoke-Computer-And-Software-Packs/Australian-Karaoke-CKS1/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/9/0/0/498/0/iPhone-And-iPad-Audio-Hardware/Mackie-DL806/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+</urlset>
