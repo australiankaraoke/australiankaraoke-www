@@ -43,6 +43,8 @@ $tNGs->executeTransactions();
 $rsshoppingcart = $tNGs->getRecordset("shoppingcart");
 $row_rsshoppingcart = mysql_fetch_assoc($rsshoppingcart);
 $totalRows_rsshoppingcart = mysql_num_rows($rsshoppingcart);
+
+
 ?><!-- InstanceBegin template="/Templates/dev-dec12.dwt.php" codeOutsideHTMLIsLocked="false" --><?php session_start(); ?><?php require_once '../php_classes/Mobile-Detect-2.3/Mobile_Detect.php'; ?>
 <?php
     $detect = new Mobile_Detect;

@@ -35,6 +35,17 @@ $tNGs->executeTransactions();
 $rsshoppingcart = $tNGs->getRecordset("shoppingcart");
 $row_rsshoppingcart = mysql_fetch_assoc($rsshoppingcart);
 $totalRows_rsshoppingcart = mysql_num_rows($rsshoppingcart);
+
+if($_GET["product_id"]){
+	$colname_rs_facebook_og = $_GET['product_id'];
+	
+	mysql_select_db($database_karaoke_db, $karaoke_db);
+	$query_rs_facebook_og = "SELECT * FROM v_products_list WHERE products_id = $colname_rs_facebook_og";
+	$rs_facebook_og = mysql_query($query_rs_facebook_og, $karaoke_db) or die(mysql_error());
+	$row_rs_facebook_og = mysql_fetch_assoc($rs_facebook_og);
+	$totalRows_rs_facebook_og= mysql_num_rows($rs_facebook_og);
+}
+
 ?>
 <!-- InstanceBegin template="/Templates/dev-dec12.dwt.php" codeOutsideHTMLIsLocked="false" --><?php session_start(); ?><?php require_once '../php_classes/Mobile-Detect-2.3/Mobile_Detect.php'; ?>
 <?php
@@ -83,6 +94,11 @@ $totalRows_rsshoppingcart = mysql_num_rows($rsshoppingcart);
 		<!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">-->
 		<meta name="viewport" content="width=1500px;">
         
+        <meta property="og:image" content="http://www.australiankaraoke.com.au/uploads-admin/<?php echo $row_rs_facebook_og['products_filename']; ?>"/>
+        <meta property="og:image:width" content="500" />
+        <meta property="og:image:height" content="500" />
+        <meta property="og:title" content="<?php echo $row_rs_facebook_og['manufacturers_title']; ?> - <?php echo $row_rs_facebook_og['products_sku']; ?> - <?php echo $row_rs_facebook_og['products_title']; ?> - $<?php echo $row_rs_facebook_og['products_regularPrice']; ?>"/>
+        <meta property="og:description" content="<?php echo $row_rs_facebook_og['products_mini_description']; ?>" />
 		
 		<link rel="apple-touch-icon" href="/touch-icon.png"/>
 		<link rel="apple-touch-icon" sizes="72x72" href="/touch-icon.png"/>
@@ -100,11 +116,7 @@ $totalRows_rsshoppingcart = mysql_num_rows($rsshoppingcart);
 			}
 		</script>
 		
-<noscript>
-			<p class="alert">
-				This site makes heavy use of JavaScript, which could not be detected at this time!<br>Please enable it in the browser settings or upgrade your web client!
-			</p>
-		</noscript>
+
 
 		<?php
 			if($deviceType=="computer"){

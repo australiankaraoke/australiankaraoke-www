@@ -73,8 +73,6 @@ $objDynamicThumb2->setWatermark(false);
 
 <link href="/frameworks/shadowbox-3-2.0.3/shadowbox.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="/frameworks/shadowbox-3-2.0.3/shadowbox.js"></script>
-
-
 </head>
 
 <body>
@@ -130,23 +128,8 @@ if ($row_rs_singleProduct['products_isOnSale']=="1") {
     </h1>
     <div id="product_image" style="position: relative; width: 100%; margin: 0 auto; text-align: center;">
     	<a rel="shadowbox[Mixed];width=980;height=620" href="/products-support-files/product-shadownbox.php?image=<?php echo $row_rs_singleProduct['products_filename']; ?>&isPosterImage=1">
-    	
     	<img src="<?php echo $objDynamicThumb1->Execute(); ?>" border="0" style="position: relative; margin: 10px; "/>
     	</a>
-    	<script>
-		setMT('property', 'og:image', '<?php echo $objDynamicThumb1->Execute(); ?>');
-		function setMT(metaName, name, value) {
-		        var t = 'meta['+metaName+'='+name+']';
-		        var mt = $(t);
-		        if (mt.length === 0) {
-		            t = '<meta '+metaName+'="'+name+'" />';
-		            mt = $(t).appendTo('head');
-		        }
-		        mt.attr('content', value);
-		    }
-		    	//$("head").append('<meta property="og:image" content="<?php echo $objDynamicThumb1->Execute(); ?>"/>');
-		    	//$("head").append('<link rel="image_src" href="<?php echo $objDynamicThumb1->Execute(); ?>" />');
-		    	</script>
     </div>
 </div>
 
