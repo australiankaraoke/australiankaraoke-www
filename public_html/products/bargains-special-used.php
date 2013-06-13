@@ -59,9 +59,9 @@ $totalRows_rsshoppingcart = mysql_num_rows($rsshoppingcart);
 		<!-- InstanceEndEditable -->
 		<link rel="shortcut icon" href="../favicon.ico">
 		<?
-		if($_SERVER['HTTP_HOST']=='dev.australiankaraoke.com.au'){
+		if($_SERVER['HTTP_HOST']=='australiankaraoke.local'){
 		?>
-		<base href="http://dev.australiankaraoke.com.au/includes/" />
+		<base href="http://australiankaraoke.local/includes/" />
 		<?
 		} else {
 		?>
@@ -207,12 +207,7 @@ $totalRows_rsshoppingcart = mysql_num_rows($rsshoppingcart);
 		
         
         <!-- InstanceBeginEditable name="head" -->
-        	<script>
-        		
-	        	$.get('/products-support-files/categories-menu.php?categories_id=<? echo $_GET['categories_id']?>&subcategories_id=<? echo $_GET['subcategories_id']?>&subcategorygroups_id=<? echo $_GET['subcategorygroups_id']; ?>', function(categoryMenu) {
-						$("#category_menu_left").append(categoryMenu);
-				});
-        	</script>
+        	
 		<!-- InstanceEndEditable -->
 	</head>
 
@@ -324,7 +319,12 @@ border-radius: 2px;
 			    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 			  })();
 		</script>
-		
+		<script>
+        		
+	        	$.get('/products-support-files/categories-menu.php?categories_id=<? echo $_GET['categories_id']?>&subcategories_id=<? echo $_GET['subcategories_id']?>&subcategorygroups_id=<? echo $_GET['subcategorygroups_id']; ?>', function(categoryMenu) {
+						$("#category_menu_left").append(categoryMenu);
+				});
+        	</script>
 	</div>
 	</body>
 <!-- InstanceEnd --></html>

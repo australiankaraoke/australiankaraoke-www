@@ -164,19 +164,7 @@
 	</url>
 
 	<url>
-		<loc>http://www.australiankaraoke.com.au/product/8/11/27/116/Reference/Headphones/Samson-RH300/</loc>
-		<changefreq>monthly</changefreq>
-		<priority>0.9</priority>
-	</url>
-
-	<url>
 		<loc>http://www.australiankaraoke.com.au/product/8/11/27/117/Reference/Headphones/Samson-RH100/</loc>
-		<changefreq>monthly</changefreq>
-		<priority>0.9</priority>
-	</url>
-
-	<url>
-		<loc>http://www.australiankaraoke.com.au/product/8/11/26/118/Personal/Headphones/Samson-PH60/</loc>
 		<changefreq>monthly</changefreq>
 		<priority>0.9</priority>
 	</url>
@@ -218,12 +206,6 @@
 	</url>
 
 	<url>
-		<loc>http://www.australiankaraoke.com.au/product/13/0/0/163/0/Signal-Processors/Samson-S-CURVE131/</loc>
-		<changefreq>monthly</changefreq>
-		<priority>0.9</priority>
-	</url>
-
-	<url>
 		<loc>http://www.australiankaraoke.com.au/product/13/0/0/164/0/Signal-Processors/Samson-S-Curve231/</loc>
 		<changefreq>monthly</changefreq>
 		<priority>0.9</priority>
@@ -231,12 +213,6 @@
 
 	<url>
 		<loc>http://www.australiankaraoke.com.au/product/13/0/0/166/0/Signal-Processors/Samson-SCOMPlus/</loc>
-		<changefreq>monthly</changefreq>
-		<priority>0.9</priority>
-	</url>
-
-	<url>
-		<loc>http://www.australiankaraoke.com.au/product/13/0/0/167/0/Signal-Processors/Samson-S-Gate4/</loc>
 		<changefreq>monthly</changefreq>
 		<priority>0.9</priority>
 	</url>
@@ -320,19 +296,19 @@
 	</url>
 
 	<url>
-		<loc>http://www.australiankaraoke.com.au/product/10/0/0/279/0/Karaoke-Computer-And-Software-Packs/Australian-Karaoke-CKS2/</loc>
+		<loc>http://www.australiankaraoke.com.au/product/10/0/0/279/0/Karaoke-Computer-And-Software-Packs/Australian-Karaoke-CKS3/</loc>
 		<changefreq>monthly</changefreq>
 		<priority>0.9</priority>
 	</url>
 
 	<url>
-		<loc>http://www.australiankaraoke.com.au/product/10/0/0/280/0/Karaoke-Computer-And-Software-Packs/Australian-Karaoke-CKS0/</loc>
+		<loc>http://www.australiankaraoke.com.au/product/10/0/0/280/0/Karaoke-Computer-And-Software-Packs/Australian-Karaoke-CKS1/</loc>
 		<changefreq>monthly</changefreq>
 		<priority>0.9</priority>
 	</url>
 
 	<url>
-		<loc>http://www.australiankaraoke.com.au/product/10/0/0/282/0/Karaoke-Computer-And-Software-Packs/Australian-Karaoke-CKS3/</loc>
+		<loc>http://www.australiankaraoke.com.au/product/10/0/0/282/0/Karaoke-Computer-And-Software-Packs/Australian-Karaoke-CKS0/</loc>
 		<changefreq>monthly</changefreq>
 		<priority>0.9</priority>
 	</url>
@@ -938,13 +914,43 @@
 	</url>
 
 	<url>
-		<loc>http://www.australiankaraoke.com.au/product/10/0/0/497/0/Karaoke-Computer-And-Software-Packs/Australian-Karaoke-CKS1/</loc>
+		<loc>http://www.australiankaraoke.com.au/product/10/0/0/497/0/Karaoke-Computer-And-Software-Packs/Australian-Karaoke-CKS2/</loc>
 		<changefreq>monthly</changefreq>
 		<priority>0.9</priority>
 	</url>
 
 	<url>
 		<loc>http://www.australiankaraoke.com.au/product/9/0/0/498/0/iPhone-And-iPad-Audio-Hardware/Mackie-DL806/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/7/0/0/499/0/Power-Amplifiers/Phonic-XP-1000/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/7/0/0/500/0/Power-Amplifiers/Phonic-XP-2000/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/7/0/0/501/0/Power-Amplifiers/Phonic-XP-3000/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/6/9/23/502/Studio/Speakers/Samson-Rubicon-R6a/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>http://www.australiankaraoke.com.au/product/6/9/23/503/Studio/Speakers/Samson-StudioDock-4i/</loc>
 		<changefreq>monthly</changefreq>
 		<priority>0.9</priority>
 	</url>

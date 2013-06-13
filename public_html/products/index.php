@@ -53,9 +53,9 @@ $totalRows_rsshoppingcart = mysql_num_rows($rsshoppingcart);
 		<link rel="shortcut icon" href="../favicon.ico">
 		
 		<?
-		if($_SERVER['HTTP_HOST']=='dev.australiankaraoke.com.au'){
+		if($_SERVER['HTTP_HOST']=='australiankaraoke.local'){
 		?>
-		<base href="http://dev.australiankaraoke.com.au/includes/" />
+		<base href="http://australiankaraoke.local/includes/" />
 		<?
 		} else {
 		?>
@@ -83,7 +83,7 @@ $totalRows_rsshoppingcart = mysql_num_rows($rsshoppingcart);
 		<!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">-->
 		<meta name="viewport" content="width=1500px;">
         
-		<link rel="canonical" href="http://www.australiankaraoke.com.au"/>
+		
 		<link rel="apple-touch-icon" href="/touch-icon.png"/>
 		<link rel="apple-touch-icon" sizes="72x72" href="/touch-icon.png"/>
 		<link rel="apple-touch-icon" sizes="114x114" href="/touch-icon-retina.png"/>
@@ -204,11 +204,7 @@ $totalRows_rsshoppingcart = mysql_num_rows($rsshoppingcart);
         
         <!-- InstanceBeginEditable name="head" -->
         	<!--<script src="/products-support-files/products.js"></script>-->
-        	<script>
-	        	$.get('/products-support-files/categories-menu.php?categories_id=<? echo $_GET['categories_id']?>&subcategories_id=<? echo $_GET['subcategories_id']?>&subcategorygroups_id=<? echo $_GET['subcategorygroups_id']; ?>&manufacturers_id=<? echo $_GET['manufacturers_id']?>', function(categoryMenu) {
-						$("#category_menu_left").append(categoryMenu);
-				});
-        	</script>
+        	
         	<link href="../../includes/skins/mxkollection3.css" rel="stylesheet" type="text/css" media="all" />
         	<script src="../../includes/common/js/base.js" type="text/javascript"></script>
         	<script src="../../includes/common/js/utility.js" type="text/javascript"></script>
@@ -373,7 +369,11 @@ border-radius: 2px;
 			    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 			  })();
 		</script>
-		
+		<script>
+	        	$.get('/products-support-files/categories-menu.php?categories_id=<? echo $_GET['categories_id']?>&subcategories_id=<? echo $_GET['subcategories_id']?>&subcategorygroups_id=<? echo $_GET['subcategorygroups_id']; ?>&manufacturers_id=<? echo $_GET['manufacturers_id']?>', function(categoryMenu) {
+						$("#category_menu_left").append(categoryMenu);
+				});
+        	</script>
 	</div>
 	</body>
 <!-- InstanceEnd --></html>

@@ -60,9 +60,9 @@ $totalRows_rsshoppingcart = mysql_num_rows($rsshoppingcart);
 		<!-- InstanceEndEditable -->
 		<link rel="shortcut icon" href="../favicon.ico">
 		<?
-		if($_SERVER['HTTP_HOST']=='dev.australiankaraoke.com.au'){
+		if($_SERVER['HTTP_HOST']=='australiankaraoke.local'){
 		?>
-		<base href="http://dev.australiankaraoke.com.au/includes/" />
+		<base href="http://australiankaraoke.local/includes/" />
 		<?
 		} else {
 		?>
