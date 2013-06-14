@@ -42,23 +42,59 @@ $totalRows_rsblog = mysql_num_rows($rsblog);
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link type="text/css" href="/frameworks/bxslider/jquery.bxslider.css" rel="stylesheet"/>
-<link type="text/css" href="/index-support-files/mini-blog.css" rel="stylesheet"/>
-<script type="text/javascript" src="/frameworks/bxslider/jquery.bxslider.min.js"></script>
 
+<script type="text/javascript" src="/frameworks/bxslider/jquery.bxslider.min.js"></script>
+<style>
+.blogLink {
+	text-decoration: none;
+	color: #45619d;
+}
+.blogLink a {
+	text-decoration: none;
+	color: #45619d;
+}
+.blogLink a:link {
+	text-decoration: none;
+	color: #45619d;
+}
+.blogLink a:visited {
+	text-decoration: none;
+	color: #45619d;
+}
+.blogLink a:active {
+	text-decoration: underline;
+	color: #45619d;
+}
+.blogLink a:hover {
+	text-decoration: underline;
+	color: #45619d;
+}
+</style>
 
 </head>
 
 <body>
 <div style="position: relative; width: 1250px; height:78px;">
 	<div style="position: absolute; margin-left: -130px;"><img src="/index-support-files/images/blog-banner.png" alt="Blog Banner" /></div>
-    <div style="position: absolute; color: #4d4d4d; text-shadow: -1px 0 1px #fff; font-size: 22px; top: 17px; left: 15px;">Karaoke Updates</div>
-    <div id="blogSliderWrapper" style="position: absolute; left: 200px; width: 760px; top: 21px; font-size: 18px; background-color: rgba(0,0,0,0);">
+    <div style="position: absolute; color: #4d4d4d; text-shadow: -1px 0 1px #fff; font-size: 22px; top: 12px; left: 7px;">
+	    <img src="/images/facebook_updates.png">
+    </div>
+    <div id="blogSliderWrapper" style="position: absolute; left: 135px; height: 25px; overflow: hidden; width: 820px; top: 22px; padding-left: 5px; font-size: 16px; background-color: rgba(0,0,0,0);">
 		<ul class="bxslider">
 			<?php do { ?>
-		    <li class="blogLink"><?php echo $row_rsblog['title']; ?></li>
+		    <li class="blogLink"><a href="https://www.facebook.com/pages/Australian-Karaoke-Pty-Ltd/123292887824048"><?php echo $row_rsblog['title']; ?></a></li>
 			  <?php } while ($row_rsblog = mysql_fetch_assoc($rsblog)); ?>
         </ul>
 	</div>
+	<div class="fb-like" data-href="http://www.facebook.com/pages/Australian-Karaoke-Pty-Ltd/123292887824048" data-send="true" data-layout="button_count" data-width="450" data-show-faces="false" style="position: absolute; right: 262px; top: 22px;"></div>
+    <div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 </div>
 
 

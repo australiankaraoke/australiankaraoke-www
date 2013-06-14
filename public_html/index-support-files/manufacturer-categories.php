@@ -50,7 +50,7 @@ $totalRows_rs_categories_loop = mysql_num_rows($rs_categories_loop);
 $objDynamicThumb1 = new tNG_DynamicThumbnail("../../", "KT_thumbnail1");
 $objDynamicThumb1->setFolder("../uploads-admin/");
 $objDynamicThumb1->setRenameRule("{rs_manufacturers_loop.filename}");
-$objDynamicThumb1->setResize(75, 35, true);
+$objDynamicThumb1->setResize(150, 70, true);
 $objDynamicThumb1->setWatermark(false);
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -61,7 +61,7 @@ $objDynamicThumb1->setWatermark(false);
 <style>
 .masonryItem {
   width: 160px;
-  margin: 10px;
+  margin: 0 10px 0 10px;
   float: left;
   border-top: 1px solid grey;
   padding-top: 5px;
@@ -98,16 +98,16 @@ $objDynamicThumb1->setWatermark(false);
     
 	  <?php do { ?> <!-- outer loop -->
       <div class="masonryItem">
-        <img src="<?php echo $objDynamicThumb1->Execute(); ?>" border="0" style="margin-top: 5px;"/>
+        <img src="<?php echo $objDynamicThumb1->Execute(); ?>" border="0" style="margin-top: 0px;" alt="<? echo $row_rs_manufacturers_loop['title']; ?>"/>
         	<?php do { ?> <!-- inner loop -->
 				<?
                 if (($row_rs_manufacturers_loop['id'] == $row_rs_categories_loop['manufacturer_id']) && ($previousCategory<>$row_rs_categories_loop['categories_id'])) {
                 ?>
-                    <div class="categoryLink">
+                    <!--<div class="categoryLink">
 	                    <a href="/products/?categories_id=<?php echo $row_rs_categories_loop['categories_id']; ?>&categories_title=<?php echo $row_rs_categories_loop['categories_title']; ?>&manufacturer_id=<?php echo $row_rs_categories_loop['manufacturer_id']; ?>&manufacturer_title=<?php echo $row_rs_manufacturers_loop['title']; ?>">
 	                    	<div style="margin-left: 10px;"><?php echo $row_rs_categories_loop['categories_title']; ?></div>
 	                    </a>
-                    </div>
+                    </div>-->
                 <?
                 $previousCategory = $row_rs_categories_loop['categories_id'];
                 }
@@ -126,12 +126,7 @@ $objDynamicThumb1->setWatermark(false);
 </div>
 <div style="position: relative; border-bottom: 1px solid grey; margin: 25px;"></div>
 <script>
-$('#masonryContainer').masonry({
-    // options
-    itemSelector : '.masonryItem',
-    columnWidth : 180,
-    isResizable: true
-});
+
 </script>
 </body>
 </html>

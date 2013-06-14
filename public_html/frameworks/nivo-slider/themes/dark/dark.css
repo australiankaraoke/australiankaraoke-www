@@ -37,15 +37,17 @@ Supports Thumbs: true
 }
 .theme-dark .nivo-controlNav a {
 	display:inline-block;
-	width:10px;
-	height:10px;
+	width:16px;
+	height:16px;
 	background:url(bullets.png) no-repeat 0 2px;
 	text-indent:-9999px;
 	border:0;
 	margin: 0 2px;
+	margin-top: 2px;
+	margin-left: 5px;
 }
 .theme-dark .nivo-controlNav a.active {
-	background-position:0 100%;
+	background-position:0 108%;
 }
 
 .theme-dark .nivo-directionNav a {

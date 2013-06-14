@@ -151,7 +151,31 @@ $totalRows_rs_features = mysql_num_rows($rs_features);
         <li><a href="#tabs-3">Multimedia</a></li>
       </ul>
       <div id="tabs-1">
-        <div id="description" style="font-size: 14px;"><?php echo $row_rs_features['products_description']; ?></div>
+        <div id="description" style="font-size: 14px;">
+        	<style>
+				#description a {
+					color: red;
+				}
+				#description a:link {
+					color: red;
+				}
+				#description a:visited {
+					color: red;
+				}
+				#description a:hover {
+					color: red;
+				}
+			</style>
+        	<p><?php echo $row_rs_features['products_description']; ?></p>
+        	<p><?php 
+				// Show IF Conditional region1 
+				if ($row_rs_features['products_specsURL']) {
+				?>
+				        <p>Visit <a href="<?php echo $row_rs_features['products_specsURL']; ?>" target="_blank"><?php echo $row_rs_features['manufacturers_title']; ?>'s product page</a> for further information.</p>
+				          <?php } 
+				// endif Conditional region1
+				?></p>
+        </div>
       </div>
       <div id="tabs-2">
         <div id="features">
@@ -171,13 +195,13 @@ $totalRows_rs_features = mysql_num_rows($rs_features);
 		</style>
         <p><?php echo $row_rs_features['products_features']; ?></p>
         <?php 
-// Show IF Conditional region1 
-if ($row_rs_features['products_specsURL']) {
-?>
-        <p>Visit <a href="<?php echo $row_rs_features['products_specsURL']; ?>" target="_blank"><?php echo $row_rs_features['manufacturers_title']; ?>'s product page</a> for further information.</p>
-          <?php } 
-// endif Conditional region1
-?>
+		// Show IF Conditional region1 
+		if ($row_rs_features['products_specsURL']) {
+		?>
+		        <p>Visit <a href="<?php echo $row_rs_features['products_specsURL']; ?>" target="_blank"><?php echo $row_rs_features['manufacturers_title']; ?>'s product page</a> for further information.</p>
+		          <?php } 
+		// endif Conditional region1
+		?>
         </div>
       </div>
       <div id="tabs-3" style="font-size: 14px;">
